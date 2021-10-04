@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="magnet.js"></script>
+    <style>
+        html, body{width: 100%; height: 100%; overflow: hidden;}
+        #setting{padding: 10px;}
+        #app {display: flex; flex-wrap: wrap;}
+    </style>
+</head>
+<body>
+    <div id="setting">
+        <input type="radio" name="mode" id="mode1" checked>
+        <label for="mode1">mode 1: Rotate cell under mouse</label>
+        <input type="radio" name="mode" id="mode2">
+        <label for="mode2">mode 2: Rotate all cells</label>
+        <br>
+        <label for="samples">sample images :</label>
+        <select name="samples" id="samples">
+            <option value="./arrow.svg">arrow</option>
+            <option value="./compass.svg">compass</option>
+            <option value="./eyeball.svg">eyeball</option>
+        </select>
+        <br>
+        <label for="file">upload your image (100*100)</label>
+        <input type="file" id="file" name="file" accept="image/*">
+    </div>
+    <div id="app"></div>
+</body>
+</html>
